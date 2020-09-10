@@ -2,7 +2,6 @@ package com.task.tgbot.demo.config;
 
 import com.task.tgbot.demo.logger.Log;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.ApiContextInitializer;
 

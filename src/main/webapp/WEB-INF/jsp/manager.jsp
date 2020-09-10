@@ -16,17 +16,41 @@
 
 </head>
 <body>
-<div>
-    <div>
-        <h2>Add city info</h2>
-        <label for="name">City name</label>
-        <input type="text" name="name" id="name"/>
-        <br>
-        <label for="info">City info</label>
-        <input type="text" name="info" id="info"/>
-        <br>
-        <button class="create" onclick="save()">Save</button>
-    </div> </td>
+<%--<div>--%>
+<%--    <div>--%>
+<%--        <h2>Add city info</h2>--%>
+<%--        <label for="name">City name</label>--%>
+<%--        <input type="text" name="name" id="name"/>--%>
+<%--        <br>--%>
+<%--        <label for="info">City info</label>--%>
+<%--        <input type="text" name="info" id="info"/>--%>
+<%--        <br>--%>
+<%--        <button class="create" onclick="save()">Save</button>--%>
+<%--    </div> </td>--%>
+<%--</div>--%>
+
+
+<div class="container">
+    <h2>Add city info</h2>
+        <div class="row">
+            <div class="col-25">
+                <label for="name" >City name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="name" id="name" placeholder="City name..."/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="info">City info</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="info" id="info" placeholder="City info..."/>
+            </div>
+        </div>
+        <div class="row">
+            <button onclick="save()">Save</button>
+        </div>
 </div>
 
 <br>
@@ -34,7 +58,7 @@
 <br>
 <br>
 <div>
-    <table>
+    <table class="darkTable">
     <tr>
         <th>City name</th>
         <th>City info</th>
@@ -73,8 +97,8 @@
                 window.location.reload();
             }
         };
-        let name = document.getElementById("name").value;
-        let info = document.getElementById("info").value;
+        let name = document.getElementById("name").value.trim();
+        let info = document.getElementById("info").value.trim();
         if (!name || !info){
             return;
         }
