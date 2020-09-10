@@ -43,5 +43,5 @@ cd task_tgbot
 mvn spring-boot:run
 
 
-Then visit http://localhost:8080/manager
+Then visit http://localhost:8080/manager AND chat with test_task_hfk75637hfhnzi4kgk_Bot
 
