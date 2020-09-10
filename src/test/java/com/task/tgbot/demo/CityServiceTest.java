@@ -15,14 +15,14 @@ public class CityServiceTest {
 
     @Test
     public void defaultInfo() {
-        String minskStr="CityInfo{name='минск', info='Не забудьте посетить ЦУМ. Возможна бесплатная экскурсия по Окрестино'}";
-        String mskStr="CityInfo{name='москва', info='Не забудьте посетить Красную Площадь. Ну а в ЦУМ можно и не заходить)))'}";
+        String minskStr= "CityInfo{name='minsk', info='Do not forget to visit TSUM. Free excursion into Okrestino is possible.'}";
+        String mskStr="CityInfo{name='moscow', info='Do not forget to visit Red Square. But you may skip visiting of TSUM.'}";
 
-        Assert.assertEquals(minskStr, service.findByName("минск") + "");
-        Assert.assertEquals(mskStr, service.findByName("москва") + "");
+        Assert.assertEquals(minskStr, service.findByName("minsk") + "");
+        Assert.assertEquals(mskStr, service.findByName("moscow") + "");
 
-        Assert.assertEquals(minskStr, service.findByName("Минск") + "");
-        Assert.assertEquals(mskStr, service.findByName("МОСКВА") + "");
+        Assert.assertEquals(minskStr, service.findByName("Minsk") + "");
+        Assert.assertEquals(mskStr, service.findByName("MOSCOW") + "");
     }
 
     @Test
