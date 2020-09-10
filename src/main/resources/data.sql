@@ -1,3 +1,3 @@
 -- use lower case letters in PK only!!!
-insert into CITY_INFO (id, name, info) values('москва', 'москва', 'Не забудьте посетить Красную Площадь. Ну а в ЦУМ можно и не заходить)))');
-insert into CITY_INFO (id, name, info) values('минск', 'минск','Не забудьте посетить ЦУМ. Возможна бесплатная экскурсия по Окрестино');
+insert into CITY_INFO (id, name, info) values('moscow', 'moscow', 'Do not forget to visit Red Square. But you may skip visiting of TSUM.');
+insert into CITY_INFO (id, name, info) values('minsk', 'minsk','Do not forget to visit TSUM. Free excursion into Okrestino is possible.');
